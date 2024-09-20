@@ -1,0 +1,54 @@
+.siginform{
+    max-width: 400px;
+    margin: 0 auto;
+    padding:10px;
+    border: 0 solid blue;
+    border-radius: 5px;
+    background-color: #00ff08;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    
+}
+:host{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: yellow;
+    background-repeat: no-repeat;
+}
+.siginform button[type="submit"]{
+    color: #ff003c;
+    border: 0 solid red;
+    border-radius: 5px;
+    background-color: rgb(233, 238, 205);
+    cursor: pointer;
+    
+}
+.siginform input[type="username"],input[type="password"]{
+    border: 0 solid red;
+    border-radius:100px;
+}
+.siginform input[type="forgotpassword"]{
+    color: #ff003c;
+}
+.forgotpassword-link{
+    color: #ff00a6;
+    text-decoration: none;
+}
+.forgotpassword-link:hover{
+    color: rgb(119, 0, 255);
+    text-decoration: underline;
+}
+.signup-link{
+    color: #ff00a2;
+    text-decoration: none;
+}
+.signup-link:hover{
+    color: chocolate;
+    text-decoration: underline;
+}

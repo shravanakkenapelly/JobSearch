@@ -1,0 +1,36 @@
+<form class="signup-content" (ngSubmit)="onSubmit()">
+    <label>
+      <input [(ngModel)]="employerrdata.organizationname" name="organizationname" placeholder="OrganizationName" required/>
+    </label>
+    <br/>
+    <br/>
+    <label>
+      <input [(ngModel)]="employerrdata.address" name="address" placeholder="Address" required/>
+    </label>
+    <br/>
+    <br/>
+    <label>
+      <input [(ngModel)]="employerrdata.email" name="email" placeholder="Email" required/>
+    </label>
+    <br/>
+    <br/>
+    <label>
+      <input [(ngModel)]="employerrdata.contactno" name="contactno" placeholder="ContactNo" required/>
+    </label>
+    <br/>
+    <br/>
+    <label>
+      <input [(ngModel)]="employerrdata.username" name="username" placeholder="UserName" required/>
+    </label>
+    <br/>
+    <br/>
+    <label>
+        <input [(ngModel)]="employerrdata.password" name="password" placeholder="Password" required/>
+      </label>
+      <br/>
+      <br/>
+    <label>
+       <button type="submit" class="signupvalue2" [routerLink]="['/auth/login']">Register</button>
+    </label>
+  </form>
+  

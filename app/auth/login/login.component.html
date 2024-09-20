@@ -1,0 +1,25 @@
+<form class="siginform" (ngSubmit)="SignIn()">
+    <label>
+        <input [(ngModel)]="logindata.username" name="Username" class="usernameclass" placeholder="username"/>
+    </label>
+    <br>
+    <br>
+    <label>
+        <input [(ngModel)]="logindata.password" name="Password" class="passwordclass" placeholder="password"/>
+    </label>
+    <br>
+    <br>
+    <label>
+        <a [routerLink]="['/auth/forgotpassword']" class="forgotpassword-link">forgotpassword</a>
+    </label>
+    <br>
+    <br>
+    <label>
+         <button type="submit" name="login" class="submitclass" (click)="NavigatetoHome()">Login</button>
+    </label>
+    <br>
+    <br>
+    <label>
+        <p>Not a member?<a [routerLink]="['/auth/register']" class="signup-link">Signup</a></p>
+    </label>
+</form>
